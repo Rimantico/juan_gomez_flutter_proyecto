@@ -24,8 +24,8 @@ class ejercicio8 extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Icon(Icons.call, size: 50),
-                    Text("Llamada entrante"),
+                    Image.asset("assets/fotoavion.jpg",width: 150,height: 150,),
+                    Text("Vaya avión mas chulo"),
                   ],
                 ),
               ],
@@ -39,14 +39,14 @@ class ejercicio8 extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Icon(Icons.call, size: 50),
-                    Text("Llamada entrante"),
+                    Image.asset("assets/fotoavion.jpg",width: 150,height: 150,),
+                    Text("Vaya avión mas chulo"),
                   ],
                 ),
                 Column(
                   children: [
-                    Icon(Icons.call, size: 50),
-                    Text("Llamada entrante"),
+                    Image.asset("assets/fotoavion.jpg",width: 150,height: 150,),
+                    Text("Vaya avión mas chulo"),
                   ],
                 ),
               ],
@@ -57,20 +57,20 @@ class ejercicio8 extends StatelessWidget {
               children: [
                 Column(
                   children: [
-                    Icon(Icons.call, size: 50),
-                    Text("Llamada entrante"),
+                    Image.asset("assets/fotoavion.jpg",width: 150,height: 150,),
+                    Text("Vaya avión mas chulo"),
                   ],
                 ),
                 Column(
                   children: [
-                    Icon(Icons.call, size: 50),
-                    Text("Llamada entrante"),
+                    Image.asset("assets/fotoavion.jpg",width: 150,height: 150,),
+                    Text("Vaya avión mas chulo"),
                   ],
                 ),
                 Column(
                   children: [
-                    Icon(Icons.call, size: 50),
-                    Text("Llamada entrante"),
+                    Image.asset("assets/fotoavion.jpg",width: 150,height: 150,),
+                    Text("Vaya avión mas chulo"),
                   ],
                 ),
               ],
