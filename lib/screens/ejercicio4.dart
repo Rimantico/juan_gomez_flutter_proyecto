@@ -5,10 +5,8 @@ class ejercicio4 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: "Ejercicio 4",
-      home: Scaffold(
-        appBar: AppBar(title: Center(child: Text("Ejercicio 4"))),
+    return Scaffold(
+        appBar: AppBar(backgroundColor: Colors.blue,title: Center(child: Text("Ejercicio 4"))),
         body: Center(
           child: Row(
             children: [
@@ -28,7 +26,6 @@ class ejercicio4 extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }
