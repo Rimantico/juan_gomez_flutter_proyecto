@@ -14,7 +14,6 @@ class ejercicio10State extends State<ejercicio10> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
         title: Center(child: Text("Ejercicio 10")),
       ),
       body: Center(

@@ -8,7 +8,6 @@ class ejercicio1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
         title: const Center(child: Text("Ejercicio 1")),
       ),
       body: Center(

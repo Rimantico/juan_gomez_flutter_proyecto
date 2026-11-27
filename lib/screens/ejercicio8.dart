@@ -12,7 +12,6 @@ class ejercicio8 extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
         title: Center(child: Text("Ejercicio 8")),
       ),
       body: Center(

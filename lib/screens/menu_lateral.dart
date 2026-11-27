@@ -1,7 +1,6 @@
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio12.dart';
-import 'package:material_ui/material_ui.dart';
+import 'package:flutter/material.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio10.dart';
-import 'package:juan_gomez_flutter_proyecto/screens/ejercicio11.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio13.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio2.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio3.dart';
@@ -27,7 +26,7 @@ class MenuLateral extends StatelessWidget {
           DrawerHeader(
             child: Column(
               children: [
-                Text("Ejercicios"),
+                Text("Ejercicios",style: Theme.of(context).textTheme.titleLarge,),
                 Image.asset(
                   'assets/imagenDrawer.png',
                   width: 1000,

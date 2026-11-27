@@ -6,7 +6,7 @@ class ejercicio4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(backgroundColor: Colors.blue,title: Center(child: Text("Ejercicio 4"))),
+        appBar: AppBar(title: Center(child: Text("Ejercicio 4"))),
         body: Center(
           child: Row(
             children: [

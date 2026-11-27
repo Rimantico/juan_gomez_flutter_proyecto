@@ -7,7 +7,6 @@ class ejercicio7 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
         title: Center(child: Text("Actividad 7")),
       ),
     body: Row(mainAxisAlignment: MainAxisAlignment.spaceEvenly,children: [

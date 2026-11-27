@@ -48,7 +48,6 @@ class ejercicio13State extends State<ejercicio13> {
     }
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
         title: Center(child: Text("Actividad 13",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)),
       ),
       body: Stack(

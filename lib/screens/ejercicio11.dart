@@ -13,7 +13,6 @@ class ejercicio11 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
         title: Center(child: Text("Ejercicio 11")),
       ),
       body: ListView(
