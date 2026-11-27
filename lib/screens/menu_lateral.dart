@@ -1,7 +1,7 @@
-import 'package:flutter/material.dart';
+import 'package:juan_gomez_flutter_proyecto/screens/ejercicio12.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio10.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio11.dart';
-import 'package:juan_gomez_flutter_proyecto/screens/ejercicio12.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio13.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio2.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio3.dart';
@@ -141,17 +141,17 @@ class MenuLateral extends StatelessWidget {
 
           // Ejercicio 11
           ListTile(
-            title: const Text("Ejercicio 11"),
+            title: const Text("Ejercicio 12"),
             onTap: (){
               Navigator.of(context).pop();
-              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ejercicio11()));
+              Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ejercicio12()));
             },
           ),
           
           
-           // Ejercicio 12
+           // Ejercicio 13
           ListTile(
-            title: const Text("Ejercicio 11"),
+            title: const Text("Ejercicio 13"),
             onTap: (){
               Navigator.of(context).pop();
               Navigator.of(context).push(MaterialPageRoute(builder: (context)=>ejercicio13()));

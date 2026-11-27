@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:math';
 
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 class ejercicio13 extends StatefulWidget {
   const ejercicio13({super.key});
@@ -11,39 +11,65 @@ class ejercicio13 extends StatefulWidget {
 }
 
 class ejercicio13State extends State<ejercicio13> {
-  int posicion = Random().nextInt(5) + 1;
+  int posicion = Random().nextInt(5);
+  Alignment alineacion = Alignment.center;
   Timer? temporarizador;
+  int puntos = 0;
 
   @override
   void initState() {
     super.initState();
 
-    temporarizador = Timer.periodic(Duration(seconds: 3), (timer) {
+    temporarizador = Timer.periodic(Duration(seconds: 1), (timer) {
       setState(() {
-        posicion = Random().nextInt(5) + 1;
+        posicion = Random().nextInt(5);
       });
     });
   }
 
   @override
+  void dispose() {
+    temporarizador?.cancel();
+    super.dispose();
+  }
+
+  @override
   Widget build(BuildContext context) {
+    if (posicion == 0) {
+      alineacion = Alignment.bottomCenter;
+    } else if (posicion == 1) {
+      alineacion = Alignment.center;
+    } else if (posicion == 2) {
+      alineacion = Alignment.centerLeft;
+    } else if (posicion == 3) {
+      alineacion = Alignment.topLeft;
+    } else {
+      alineacion = Alignment.centerRight;
+    }
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.blue,
-        title: Center(child: Text("Actividad 13")),
+        title: Center(child: Text("Actividad 13",style: TextStyle(fontSize: 25,fontWeight: FontWeight.bold),)),
       ),
-      body: Column(children: [
-        if(posicion == 0)
-          Image.asset("assets/FotoRandom.jpeg",alignment: AlignmentGeometry.bottomCenter,width: 220,height: 220,)
-        else if(posicion == 1)
-          Image.asset("assets/FotoRandom.jpeg",alignment: AlignmentGeometry.center,width: 220,height: 220)
-        else if(posicion == 2)
-          Image.asset("assets/FotoRandom.jpeg",alignment: AlignmentGeometry.centerLeft,width: 220,height: 220)
-        else if(posicion == 3)
-          Image.asset("assets/FotoRandom.jpeg",alignment: AlignmentGeometry.topStart,width: 220,height: 220)
-        else
-          Image.asset("assets/FotoRandom.jpeg",alignment: AlignmentGeometry.centerRight,width: 220,height: 220)
-      ],)
+      body: Stack(
+        children: [
+          Align(
+            alignment: Alignment.topRight,
+            child: Text("Puntos: $puntos"),
+          ),
+          Align(
+            alignment: alineacion,
+            child: GestureDetector(
+              onTap: () {
+                setState(() {
+                  puntos++;
+                });
+              },
+              child: Image.asset("assets/FotoRandom.jpeg", width: 220, height: 220),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

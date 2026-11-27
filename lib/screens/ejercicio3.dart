@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 
 class ejercicio3 extends StatelessWidget {
   const ejercicio3({super.key});

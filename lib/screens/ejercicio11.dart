@@ -1,4 +1,4 @@
-import 'package:flutter/material.dart';
+import 'package:material_ui/material_ui.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio11/botones_perfil.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio11/estadisticas_perfil.dart';
 import 'package:juan_gomez_flutter_proyecto/screens/ejercicio11/historias_destacadas.dart';
